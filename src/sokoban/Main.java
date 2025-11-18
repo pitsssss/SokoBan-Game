@@ -1,0 +1,16 @@
+package sokoban;
+
+
+
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        SwingUtilities.invokeLater(() -> {
+            LevelManager levelManager = new LevelManager();
+            new LevelSelectionScreen(levelManager).setVisible(true);
+        });
+
+    }
+}
